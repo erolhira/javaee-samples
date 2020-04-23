@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+</h:head>
+<h:body>
+
+    <h1>Cdi 2.0 Jtudy by Javalopment</h1>
+    <h:form>
+        <div>#{carController.defaultCar.name}</div>
+        <div>#{carController.opelCorsa.name}</div>
+        <div>#{Astra.name}</div>
+        <div></div>
+        <h:commandButton value="Drive" actionListener="#{carController.drive}"></h:commandButton>
+        <h:commandButton value="Login" actionListener="#{carController.login}"></h:commandButton>
+        <h:commandButton value="User Info" actionListener="#{carController.printUserInfo}"></h:commandButton>
+        <h:commandButton value="From Ejb" actionListener="#{carController.fromLoginEjb}"></h:commandButton>
+        <div>
+        	<h:commandButton value="Open Corsa" actionListener="#{eventController.openOpelCorsa}"></h:commandButton>
+        	<h:commandButton value="Close Corsa" actionListener="#{eventController.closeOpelCorsa}"></h:commandButton>
+        </div>
+    </h:form>
+</h:body>
+</html>
